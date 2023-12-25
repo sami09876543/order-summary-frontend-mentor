@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- STYLE FILES -->
+  <link rel="stylesheet" href="./assets/css/flexbox-utilities.css" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background-image: url(./images/pattern-background-desktop.svg), url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top, bottom;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <main class="md:h-screen flex justify-center md:mt-0 mt-12 items-center">
+
+    <div class="bg-white rounded-xl shadow-xl w-fit">
+      <img class="rounded-t-xl md:w-[400px] w-[350px]" src="./images/illustration-hero.svg" alt="illustration-hero">
+      <div class="flex justify-center text-center mt-[40px] md:w-[400px] w-[350px]">
+        <div class="w-[300px]">
+          <h1 class="text-2xl font-bold text-[#1d2b45]">Order Summary</h1>
+          <p class="mt-4 text-[#838790]">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          </p>
+        </div>
+      </div>
+      <div class="md:w-full w-[350px] flex flex-col justify-center mt-6 px-[30px]">
+        <div class="flex justify-between items-center py-5 px-6 md:w-full bg-[#f8f9fe] rounded-xl">
+          <div class="flex items-center">
+            <img src="./images/icon-music.svg" alt="icon-music">
+            <div class="ml-2 md:text-base text-sm">
+              <div class="font-semibold">Annual Plan</div>
+              <div class="text-[#838790]">$59,99/year</div>
+            </div>
+          </div>
+          <div class="text-blue-400 hover:text-blue-500 hover:underline md:text-base text-sm cursor-pointer">Change</div>
+        </div>
+        <button class="bg-[#382ae1] hover:bg-blue-600 py-4 text-center text-white rounded-lg mb-8 mt-7 shadow-xl">
+          Proceed to payment
+        </button>
+        <div class="flex justify-center mb-8">
+          <div class="text-[#7c818f] font-semibold cursor-pointer hover:text-gray-500">Cancel order</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
